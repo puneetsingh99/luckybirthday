@@ -1,3 +1,145 @@
-body{
-    background-color: aqua;
+@import url("https://fonts.googleapis.com/css2?family=Yellowtail&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+:root {
+  --clr-primary: #7a04eb;
+  --clr-secondary: #ff00a0;
+  --clr-tertiary: #ff124f;
+  --clr-quaternery: #120458;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #4b4848;
+  max-width: 1000px;
+  margin: auto;
+  background-color: lightgrey;
+}
+
+
+section,
+footer {
+  margin-bottom: 3rem;
+}
+header{
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+}
+section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+aside {
+  width: 100%;
+}
+
+
+#hero-img{
+  width: 400px;
+}
+
+.container-center {
+  max-width: 1000px;
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+#p-small {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  text-align: center;
+}
+
+#aside-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 50%;
+}
+
+input,
+button {
+  padding: 0.8rem;
+  width: 80%;
+  margin-bottom: 2.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+}
+
+button {
+  font-family: "Yellowtail", cursive;
+  text-transform: uppercase;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  color: white;
+  background-color: var(--clr-primary);
+}
+
+nav p {
+  text-shadow: 5px 10px 12px 0px rgba(255, 255, 255, 1);
+  flex-basis: 100%;
+  color: var(--clr-secondary);
+  font-size: 2rem;
+  font-family: "Yellowtail", cursive;
+}
+nav img {
+  width: 2rem;
+}
+
+#hero-heading {
+  color: var(--clr-tertiary);
+}
+
+#aside-left {
+  width: 50%;
+}
+
+aside p {
+  font-size: 3.5rem;
+  font-weight: bolder;
+  margin-bottom: 2rem;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #333333;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+
+img {
+  width: 2.5rem;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+ul li {
+  padding: 1rem;
+  align-self: center;
+  text-align: center;
+  margin: 0rem 1rem;
+}
+
+ul li:nth-child(1) {
+  flex-basis: 100%;
 }

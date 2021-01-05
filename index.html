@@ -8,14 +8,40 @@
 </head>
 <body>
     <header>
-        <nav></nav>
+        <nav class="container-center">
+            <p>LB</p>
+            <img src="./img/icon-moon.svg" alt="night mode">
+        </nav>
     </header>
-    <section>
-        <input type="date" id="inp-dob">
-        <input type="number" id="inp-luckynum">
-        <button id="btn-check"> check </button>
+    <section class="container-center">
+        <aside id="aside-left">
+            <p>Is your Birthday <span id="hero-heading">Lucky?</span> </p>
+            <img  src="./img/svg-cake.svg" id = "hero-img" alt="cake">
+        </aside>
+        <aside id="aside-right">
+            <!-- <p id="p-small">Enter DOB</p> -->
+            <input type="date" id="inp-dob">
+            <!-- <p id="p-small">Enter your Lucky Number</p> -->
+            <input type="number" id="inp-luckynum" placeholder="Enter your Lucky Number">
+            <button id="btn-check"> check </button>
+        </aside>
+ 
     </section>
-    <footer></footer>
+    <footer>
+        <div>
+            <ul>
+                <li> <a href="https://puneetsingh.netlify.com">My portfolio</a>
+                <li> <a href="https://github.com/puneetsingh99"> <img id="icon-github" src="./img/icon-github.svg"> </a>
+                </li>
+                <li> <a href="https://github.com/puneetsingh99"><img id="icon-linkedin" src="./img/icon-linkedin.svg"></a> </li>
+                </li>
+                <li> <a href="https://github.com/puneetsingh99"><img id="icon-twitter" src="./img/icon-twitter.svg"></a> </li>
+                </li>
+                <li> <a href="https://github.com/puneetsingh99"><img id="icon-instagram" src="./img/icon-instagram.svg"></a> </li>
+            </ul>
+        </div>
+        
+    </footer>
     <script src="app.js"></script>
-</body>
+    </body>
 </html>
