@@ -7,41 +7,43 @@
     <title>Lucky Birthday</title>
 </head>
 <body>
-    <header>
-        <nav class="container-center">
-            <p>LB</p>
-            <img src="./img/icon-moon.svg" alt="night mode">
-        </nav>
-    </header>
-    <section class="container-center">
-        <aside id="aside-left">
-            <p>Is your Birthday <span id="hero-heading">Lucky?</span> </p>
-            <img  src="./img/svg-cake.svg" id = "hero-img" alt="cake">
-        </aside>
-        <aside id="aside-right">
-            <!-- <p id="p-small">Enter DOB</p> -->
-            <input type="date" id="inp-dob">
-            <!-- <p id="p-small">Enter your Lucky Number</p> -->
-            <input type="number" id="inp-luckynum" placeholder="Enter your Lucky Number">
-            <button id="btn-check"> check </button>
-        </aside>
- 
-    </section>
-    <footer>
-        <div>
-            <ul>
-                <li> <a href="https://puneetsingh.netlify.com">My portfolio</a>
-                <li> <a href="https://github.com/puneetsingh99"> <img id="icon-github" src="./img/icon-github.svg"> </a>
-                </li>
-                <li> <a href="https://github.com/puneetsingh99"><img id="icon-linkedin" src="./img/icon-linkedin.svg"></a> </li>
-                </li>
-                <li> <a href="https://github.com/puneetsingh99"><img id="icon-twitter" src="./img/icon-twitter.svg"></a> </li>
-                </li>
-                <li> <a href="https://github.com/puneetsingh99"><img id="icon-instagram" src="./img/icon-instagram.svg"></a> </li>
-            </ul>
-        </div>
+    <div class="app">
+        <header class="app__header">
+            <p class="app__branding">LB</p>
+            <a href="#" class="app__mode"> <img src="./img/icon-moon.svg" alt="night mode" class="icon"/> </a>
+        </header>
+        <section  class="app__hero">
+            <article class="app__article">
+                <p class="app__heading"> Is your Birthday <span class="span">Lucky?</span> </p>
+                <img class="app__img" src="./img/svg-cake.svg" alt="cake">
+            </article>
+            <aside class="app__aside">
+            <p class="label">Enter DOB</p>
+            <input type="date" id="inp__dob">
+            <p class="label">Enter your Lucky Number</p>
+            <input type="number" id="inp__luckynum">
+            <button class="btn"> check </button>
+
+            </aside>
         
-    </footer>
+        </section>
+        <footer class="app_footer">
+            <a class="link" href="https://puneetsingh.netlify.com">My portfolio</a>
+            <ul class="app__list">
+               
+                <li class="app__listitem> <a href="https://github.com/puneetsingh99"> <img class="icon icon--social" src="./img/icon-github.svg"> </a>
+                </li>
+                <li class="app__listitem> <a href="https://github.com/puneetsingh99"><img class="icon icon--social" src="./img/icon-linkedin.svg"></a> </li>
+                </li>
+                <li class="app__listitem> <a href="https://github.com/puneetsingh99"><img class="icon icon--social" src="./img/icon-twitter.svg"></a> </li>
+                </li>
+                <li class="app__listitem> <a href="https://github.com/puneetsingh99"><img class="icon icon--social" src="./img/icon-instagram.svg"></a>
+                </li>
+            </ul>
+        
+        </footer>
+    </div>
+    
     <script src="app.js"></script>
     </body>
 </html>
